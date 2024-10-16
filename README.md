@@ -15,6 +15,7 @@ bun dev
 ```
 
 Run Prettier
+
 ```bash
 npx prettier . --write
 # or
