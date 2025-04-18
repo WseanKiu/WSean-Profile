@@ -159,6 +159,10 @@ const config = {
         fifth: 'moveInCircle 20s ease infinite',
         scroll:
           'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite'
+      },
+      textGradient: {
+        DEFAULT:
+          'text-transparent bg-gradient-to-r from-[#9845E8] via-[#33D2FF] to-[#DD5789] bg-clip-text'
       }
     }
   },

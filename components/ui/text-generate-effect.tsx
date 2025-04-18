@@ -1,5 +1,5 @@
 'use client';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { motion, stagger, useAnimate } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
@@ -7,17 +7,30 @@ export const TextGenerateEffect = ({
   words,
   className,
   filter = true,
-  duration = 0.5
+  duration = 0.5,
+  delay = 0
 }: {
   words: string;
   className?: string;
   filter?: boolean;
   duration?: number;
+  delay?: number;
 }) => {
   const [scope, animate] = useAnimate();
+  const [showTextEffect, setShowTextEffect] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowTextEffect(true);
+    }, delay);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   // eslint-disable-next-line prefer-const
   let wordsArray = words.split(' ');
   useEffect(() => {
+    if (!showTextEffect) return;
     animate(
       'span',
       {
@@ -29,7 +42,7 @@ export const TextGenerateEffect = ({
         delay: stagger(0.2)
       }
     );
-  }, [scope.current]);
+  }, [scope.current, showTextEffect]);
 
   const renderWords = () => {
     return (
@@ -38,9 +51,10 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className={`${idx > 3 ? 'text-purple' : 'dark:text-white text-black'} opacity-0`}
+              // className={`${idx > 0 ? 'text-purple' : 'dark:text-white text-black'} opacity-0`}
               style={{
-                filter: filter ? 'blur(10px)' : 'none'
+                filter: filter ? 'blur(10px)' : 'none',
+                opacity: showTextEffect ? 1 : 0
               }}
             >
               {word}{' '}
@@ -52,9 +66,9 @@ export const TextGenerateEffect = ({
   };
 
   return (
-    <div className={cn('font-bold', className)}>
+    <div className={cn(className)}>
       <div className="my-4">
-        <div className=" dark:text-white text-black text-[40px] leading-snug tracking-wide">
+        <div className=" dark:text-white text-black leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>

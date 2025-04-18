@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: 'Currently building a JS Animation library',
+    title: 'Currently building a Mobile App using React Native.',
     description: 'The Inside Scoop',
     className: 'md:col-span-3 md:row-span-2',
     imgClassName: 'absolute right-0 bottom-0 md:w-96 w-60',
@@ -107,31 +107,31 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Winston was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Winston's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Winston is the ideal partner.",
     name: 'Michael Johnson',
     title: 'Director of AlphaStream Technologies'
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Winston was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Winston's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Winston is the ideal partner.",
     name: 'Michael Johnson',
     title: 'Director of AlphaStream Technologies'
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Winston was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Winston's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Winston is the ideal partner.",
     name: 'Michael Johnson',
     title: 'Director of AlphaStream Technologies'
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Winston was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Winston's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Winston is the ideal partner.",
     name: 'Michael Johnson',
     title: 'Director of AlphaStream Technologies'
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Winston was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Winston's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Winston is the ideal partner.",
     name: 'Michael Johnson',
     title: 'Director of AlphaStream Technologies'
   }
@@ -173,14 +173,14 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: 'Frontend Engineer Intern',
+    title: 'Software Engineer Intern',
     desc: 'Assisted in the development of a web-based platform using React.js, enhancing interactivity.',
     className: 'md:col-span-2',
     thumbnail: '/exp1.svg'
   },
   {
     id: 2,
-    title: 'Mobile App Dev - JSM Tech',
+    title: 'Mobile App Dev',
     desc: 'Designed and developed mobile app for both iOS & Android platforms using React Native.',
     className: 'md:col-span-2', // change to md:col-span-2
     thumbnail: '/exp2.svg'
@@ -188,13 +188,13 @@ export const workExperience = [
   {
     id: 3,
     title: 'Freelance App Dev Project',
-    desc: 'Led the dev of a mobile app for a client, from initial concept to deployment on app stores.',
+    desc: 'Led the development of an application for a client, from initial concept to deployment across relevant platforms.',
     className: 'md:col-span-2', // change to md:col-span-2
     thumbnail: '/exp3.svg'
   },
   {
     id: 4,
-    title: 'Lead Frontend Developer',
+    title: 'Frontend Developer',
     desc: 'Developed and maintained user-facing features using modern frontend technologies.',
     className: 'md:col-span-2',
     thumbnail: '/exp4.svg'
@@ -204,14 +204,17 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: '/git.svg'
+    img: '/git.svg',
+    link: 'https://github.com/WseanKiu'
   },
-  {
-    id: 2,
-    img: '/twit.svg'
-  },
+  // {
+  //   id: 2,
+  //   img: '/twit.svg',
+  //   link: 'https://github.com/WseanKiu'
+  // },
   {
     id: 3,
-    img: '/link.svg'
+    img: '/link.svg',
+    link: 'https://www.linkedin.com/in/winstonseanqui/'
   }
 ];

@@ -34,7 +34,7 @@ const Phases = () => {
               [255, 166, 158],
               [221, 255, 247]
             ]}
-            dotSize={4}
+            dotSize={2}
           />
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
